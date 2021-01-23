@@ -8,23 +8,23 @@ import reset from 'styled-reset';
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
-  /* other styles go here */
+    /* other styles go here */
   html, body {
     height: 100%;
     background-color: #eee;
   }
+
   div#root {
     height: 100%;
   }
-
-`
+`;
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change
